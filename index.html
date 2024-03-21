@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+    <div class="login_container">
+        <div class="login_wrapper">
+            <div style="width: 50%; position: relative;">
+                <h2 class="hover_h2">login page</h2>
+
+            </div>
+            <div style="width: 40%;">
+                <form action="" class="login_form">
+                    <h2 style="font-size: 30px; margin-bottom: 15px;">login</h2>
+                    <div class="emailWARNING" style="margin-bottom: 20px;">
+                        <p id="login_sucess" class="login-sucess"></p>
+                    </div>
+                    
+                    <label for="email">Email</label>
+                    <input type="text" id="login-input-ele">
+
+                    <div class="emailWARNING" >
+                        <p id="logininput-warn"></p>
+                    </div>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password">
+
+                    <div class="emailWARNING" >
+                        <p id="loginpassword"></p>
+                    </div>
+                        <input type="checkbox" onclick="loginCheckBox()" class="logincheckbox">
+                    
+                  
+                  
+
+                    <p><a href="/login.html">Create Account</a></p>
+
+                    <button id="login-btn">login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/main.js">
+        
+    </script>
+
+</body>
+
+</html>
