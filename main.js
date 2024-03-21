@@ -22,7 +22,7 @@ if (btn) {
     obj = [{
       firstname: fName.value.trim(),
       lastname: lName.value,
-      email: emails.value,
+      email: emails.value.trim(),
       password: pasword.value,
     }]
 
