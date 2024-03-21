@@ -38,7 +38,7 @@ button {
     color: #fff;
 }
 
-.capitalixe{
+.capitalixe {
     text-transform: capitalize;
 }
 
@@ -67,9 +67,12 @@ button {
 .checkbox {
 
     position: absolute;
-    left: 108px;
-    bottom: 9px !important;
+    right: 3px;
+    bottom: 35% !important;
+    width: 13px !important;
 }
+
+
 
 .password_con {
     position: absolute;
@@ -101,23 +104,18 @@ button {
     .checkbox {
 
         position: absolute;
-        left: 90%;
-        bottom: 20px !important;
-        width: 10px !important;
+        right: 1%;
+        bottom: 34% !important;
+        width: 13px !important;
     }
-
-    button {
-        background-color: #0ea4fb;
-        width: 100%;
-        padding: 5px;
-        margin-top: 20px;
-        border: none;
-        color: #fff;
-    }
-
-
-   
 }
+
+
+
+
+
+
+
 
 @media only screen and (min-width:480px) {
 
@@ -134,14 +132,9 @@ button {
         font-size: 21px;
         font-family: sans-serif;
     }
-    .checkbox {
 
-        position: absolute;
-        left: 94%;
-        bottom: 20px !important;
-        width: 10px !important;
-    }
-    
+   
+
 }
 
 
@@ -160,16 +153,17 @@ button {
         font-size: 21px;
         font-family: sans-serif;
     }
-
-
-    
     .checkbox {
 
         position: absolute;
-        left: 96%;
-        bottom: 31px !important;
-        width: 10px !important;
+        right: 1%;
+        bottom: 16% !important;
+        width: 13px !important;
     }
+
+
+
+
 
 }
 
@@ -239,7 +233,7 @@ body {
     box-sizing: border-box;
 }
 
-.login-sucess_warning{
+.login-sucess_warning {
     color: red;
     font-size: 20px;
     text-align: center;
@@ -253,9 +247,9 @@ body {
     text-align: center;
 }
 
-.logincheckbox{
+.logincheckbox {
     position: absolute;
-    bottom: 155px ;
+    bottom: 155px;
     right: 30px;
     width: 12px !important;
 }
@@ -285,14 +279,15 @@ body {
         border-radius: 6px;
         margin-top: 40px;
     }
-    .logincheckbox{
+
+    .logincheckbox {
         position: absolute;
-        bottom: 155px;
-        right: 20px;
+        bottom: 35%;
+        right: 7%;
         width: 13px !important;
     }
-    
-   
+
+
 }
 
 
@@ -313,36 +308,26 @@ body {
         width: 80%;
         height: 100vh;
     }
-     .login_wrapper h2 {
+
+    .login_wrapper h2 {
         font-size: 40px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
     }
-    .logincheckbox{
-        position: absolute;
-        bottom: 153px;
-        right: 23px;
-        width: 13px !important;
+
+
+}
+
+@media only screen and (min-width:1281px) {
+
+    .login_wrapper h2 {
+        font-size: 60px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
     }
-  
-}
 
-@media only screen and (min-width:1281px){
-
-.login_wrapper h2 {
-   font-size: 60px;
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
-   font-style: normal;
-}
-
-.logincheckbox{
-    position: absolute;
-    bottom: 158px;
-    right: 30px;
-    width: 13px !important;
-}
 
 }
 
@@ -350,66 +335,69 @@ body {
 
 /* main.html */
 
-.brand_name{
+.brand_name {
     font-size: 20px !important;
 }
 
-.userfulldata{
+.userfulldata {
     font-size: 16px !important;
 }
 
 
 
 
-.nav_bar_color{
+.nav_bar_color {
     background-color: black;
 }
 
 
-.home_container{
+.home_container {
     margin: 0 10px 0px 10;
 }
-.image_container{
+
+.image_container {
     width: 100%;
     margin: 20px auto 0 auto;
     height: 100%;
-   
+
 }
-.Gallery_list{
+
+.Gallery_list {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     padding: 0 10px;
     margin-bottom: 0px;
 }
 
 
-li{
+li {
     list-style: none;
 }
-.Gallery_list li{
-    width:calc(100%/3 - 40px/3);
+
+.Gallery_list li {
+    width: calc(100%/3 - 40px/3);
     margin-bottom: 20px;
     margin-right: 20px;
-    
+
 }
 
-.Gallery_list li:hover{
-  box-shadow:   -2px 3px 7px -3px black;
+.Gallery_list li:hover {
+    box-shadow: -2px 3px 7px -3px black;
 }
 
 
 
-.Gallery_list li:nth-child(3n){
+.Gallery_list li:nth-child(3n) {
     margin-right: 0px;
 }
 
-.Gallery_list li img{
+.Gallery_list li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-footer{
+footer {
     width: 100%;
     height: 70px;
     background-color: #000;
@@ -419,19 +407,19 @@ footer{
     align-items: center;
 }
 
-footer p{
+footer p {
     font-size: 15px;
     margin-bottom: 0px;
-   
+
 }
 
-footer p a{
+footer p a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
 }
 
-footer p a:hover{
+footer p a:hover {
     color: #b4b2b2;
 }
 
@@ -440,120 +428,147 @@ footer p a:hover{
 
 @media only screen and (min-width:320px) {
 
-    .brand_name{
+    .brand_name {
         font-size: 16px !important;
     }
-    .userfulldata{
+
+    .userfulldata {
         font-size: 12px !important;
     }
 
-  
-    .Gallery_list li{
-        width:calc(100% /1);
+
+    .Gallery_list li {
+        width: calc(100% /1);
         margin-bottom: 20px;
         margin-right: 20px;
-        
+
     }
-    .Gallery_list li:nth-child(1n){
+
+    .Gallery_list li:nth-child(1n) {
         margin-right: 0px;
     }
 
-    
-    footer p{
-       font-size: 12px;
+
+    footer p {
+        font-size: 12px;
         margin-bottom: 0px;
 
-       
+
     }
 }
 
-@media only screen and (min-width:700px){
-    .brand_name{
+@media only screen and (min-width:700px) {
+    .brand_name {
         font-size: 25px !important;
     }
-    .userfulldata{
+
+    .userfulldata {
         font-size: 16px !important;
     }
-    .Gallery_list li{
-        width:calc(100% /3 - 40px/3);
+
+    .Gallery_list li {
+        width: calc(100% /3 - 40px/3);
         margin-bottom: 20px;
-        margin-right: 20px!important;
-        
-    }
-    .Gallery_list li:nth-child(3n){
-        margin-right: 0px !important ;
+        margin-right: 20px !important;
+
     }
 
-    footer p{
+    .Gallery_list li:nth-child(3n) {
+        margin-right: 0px !important;
+    }
+
+    footer p {
         font-size: 15px;
-         margin-bottom: 0px;
- 
-        
-     }
+        margin-bottom: 0px;
+
+
+    }
 }
 
-.div_strip{
+.div_strip {
     width: 20%;
     background-color: white;
     height: 5%;
     position: absolute;
     top: 84px;
     animation: chaser 5s infinite;
-   
+
 }
+
 @keyframes chaser {
-  from{width: 0px;}  
-  to  {width: 250px;}
-   
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 250px;
+    }
+
 }
 
-@keyframes chaserreturn{
-    from {width: 250px;}
-    to {width: 0px;}
+@keyframes chaserreturn {
+    from {
+        width: 250px;
+    }
+
+    to {
+        width: 0px;
+    }
 }
 
-.div_strip2{
+.div_strip2 {
     width: 20%;
     background-color: rgb(21, 121, 214);
     height: 5%;
     position: absolute;
     top: 84px;
     animation: chaserreturn 5s infinite;
-    
+
 }
 
 
 /* media quary */
 
 
-@media only screen and (min-width:1281px){
-    .div_strip{
+@media only screen and (min-width:1281px) {
+    .div_strip {
         width: 20%;
         background-color: white;
         height: 5%;
         position: absolute;
         top: 121px;
         animation: chaser 5s infinite;
-       
+
     }
+
     @keyframes chaser {
-      from{width: 0px;}  
-      to  {width: 380px;}
-       
+        from {
+            width: 0px;
+        }
+
+        to {
+            width: 380px;
+        }
+
     }
-    
-    @keyframes chaserreturn{
-        from {width: 380px;}
-        to {width: 0px;}
+
+    @keyframes chaserreturn {
+        from {
+            width: 380px;
+        }
+
+        to {
+            width: 0px;
+        }
     }
-    
-    .div_strip2{
+
+    .div_strip2 {
         width: 20%;
         background-color: rgb(21, 121, 214);
         height: 5%;
         position: absolute;
         top: 121px;
         animation: chaserreturn 5s infinite;
-        
+
     }
 }
