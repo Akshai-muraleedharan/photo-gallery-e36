@@ -241,7 +241,7 @@ if (loginBtn) {
 // login email function warning
 
 let mailWarn = document.getElementById('logininput-warn')
-console.log(mailWarn);
+
 function emailWarn() {
   if (loginMail.value === '') {
 
@@ -264,7 +264,7 @@ function emailWarn() {
 }
 
 let loginPassWarn = document.getElementById('loginpassword')
-console.log(loginPassWarn);
+
 
 // login password function warning
 function loginsPasswords() {
@@ -328,4 +328,4 @@ function loginCheckBox() {
 
 let userFullName = document.getElementById('userfullname');
 
-userFullName.textContent = `Hello ${userFirstName}   ${userLastName}`
+userFullName.textContent = ` Hello ${userFirstName}   ${userLastName} `;

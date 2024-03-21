@@ -491,3 +491,69 @@ footer p a:hover{
         
      }
 }
+
+.div_strip{
+    width: 20%;
+    background-color: white;
+    height: 5%;
+    position: absolute;
+    top: 84px;
+    animation: chaser 5s infinite;
+   
+}
+@keyframes chaser {
+  from{width: 0px;}  
+  to  {width: 250px;}
+   
+}
+
+@keyframes chaserreturn{
+    from {width: 250px;}
+    to {width: 0px;}
+}
+
+.div_strip2{
+    width: 20%;
+    background-color: rgb(21, 121, 214);
+    height: 5%;
+    position: absolute;
+    top: 84px;
+    animation: chaserreturn 5s infinite;
+    
+}
+
+
+/* media quary */
+
+
+@media only screen and (min-width:1281px){
+    .div_strip{
+        width: 20%;
+        background-color: white;
+        height: 5%;
+        position: absolute;
+        top: 121px;
+        animation: chaser 5s infinite;
+       
+    }
+    @keyframes chaser {
+      from{width: 0px;}  
+      to  {width: 380px;}
+       
+    }
+    
+    @keyframes chaserreturn{
+        from {width: 380px;}
+        to {width: 0px;}
+    }
+    
+    .div_strip2{
+        width: 20%;
+        background-color: rgb(21, 121, 214);
+        height: 5%;
+        position: absolute;
+        top: 121px;
+        animation: chaserreturn 5s infinite;
+        
+    }
+}
