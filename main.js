@@ -20,7 +20,7 @@ if (btn) {
     event.preventDefault();
 
     obj = [{
-      firstname: fName.value,
+      firstname: fName.value.trim(),
       lastname: lName.value,
       email: emails.value,
       password: pasword.value,
