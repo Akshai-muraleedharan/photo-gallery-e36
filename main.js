@@ -210,8 +210,8 @@ function localobj() {
   userPassword = arrAt.password
   userFirstName = arrAt.firstname
   userLastName = arrAt.lastname
-  console.log("your password" + " " +userPassword);
-  console.log( "your email-id" + " " +userMail);
+  console.log("your password :" + " " +userPassword);
+  console.log( "your email-id :" + " " +userMail);
 
 }
 
