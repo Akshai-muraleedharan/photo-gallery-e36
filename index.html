@@ -13,28 +13,31 @@
 </head>
 
 <body>
+    <div class="video_container">
+        <video src="./video/background-video.mp4"  autoplay loop muted></video>
+    </div>
+    <div class="login_background_liner"></div>
     <div class="login_container">
         <div class="login_wrapper">
             <div style="width: 50%; position: relative;">
                 <h2 class="hover_h2">Photo Gallery</h2>
-                <div class="div_strip"></div>
-                <div class="div_strip2"></div>
+                
             </div>
             <div style="width: 40%;">
                 <form action="" class="login_form">
-                    <h2 style="font-size: 30px; margin-bottom: 15px;">login</h2>
+                    <h2 style="font-size: 30px; margin-bottom: 15px; color: #fff;">login</h2>
                     <div class="emailWARNING" style="margin-bottom: 20px;">
                         <p id="login_sucess" class="login-sucess"></p>
                     </div>
                     
-                    <label for="email">Email</label>
+                    <label for="email" style="color: #fff;" class="font_style">Email</label>
                     <input type="text" id="login-input-ele">
 
                     <div class="emailWARNING" >
                         <p id="logininput-warn"></p>
                     </div>
 
-                    <label for="password">Password</label>
+                    <label for="password" style="color: #fff;" class="font_style">Password</label>
                     <input type="password" id="login-password">
 
                     <div class="emailWARNING" >
@@ -45,7 +48,7 @@
                   
                   
 
-                    <p><a href="signup.html">Create Account</a></p>
+                    <p><a href="signup.html" >Create Account</a></p>
 
                     <button id="login-btn">login</button>
                 </form>

@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
 
 .container {
     width: 100%;
     height: 100vh;
-    background-color: #e6edef;
+    /* background-color: #0e4d5f; */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
-
+.signup_title{
+    color: #fff;
+    font-family: "Readex Pro", sans-serif;
+}
 form {
     width: 50%;
     padding: 20px;
@@ -33,13 +38,28 @@ button {
     background-color: #0ea4fb;
     width: 100%;
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
     border: none;
     color: #fff;
 }
 
 .capitalixe {
     text-transform: capitalize;
+   
+    
+}
+
+.label_font{
+    font-family: "Readex Pro", sans-serif;
+    color: #fff;
+}
+
+.background_liner{
+    background: linear-gradient(279deg, rgba(2, 0, 36, 1) 0%, rgb(0 0 0 / 44%) 60%);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 /* js css */
@@ -49,6 +69,7 @@ button {
     margin-top: 5px;
     margin-right: 5px;
     color: #f91818;
+    font-family: "Readex Pro", sans-serif;
 }
 
 .warnin {
@@ -80,6 +101,7 @@ button {
     top: 50px;
     margin-right: 5px;
     color: #f91818;
+    font-family: "Readex Pro", sans-serif;
 }
 
 /* media  query*/
@@ -98,7 +120,7 @@ button {
         align-items: center;
         justify-content: center;
         font-size: 16px;
-        font-family: sans-serif;
+        font-family: "Readex Pro", sans-serif;
     }
 
     .checkbox {
@@ -130,8 +152,9 @@ button {
         align-items: center;
         justify-content: center;
         font-size: 21px;
-        font-family: sans-serif;
+        font-family: "Readex Pro", sans-serif;
     }
+
     .checkbox {
 
         position: absolute;
@@ -140,11 +163,11 @@ button {
         width: 13px !important;
     }
 
-   
+
 
 }
 
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1024px) {
     .checkbox {
 
         position: absolute;
@@ -167,8 +190,9 @@ button {
         align-items: center;
         justify-content: center;
         font-size: 21px;
-        font-family: sans-serif;
+        font-family: "Readex Pro", sans-serif;
     }
+
     .checkbox {
 
         position: absolute;
@@ -196,7 +220,27 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f17678;
+    position: absolute;
+    top: 0;
+
+}
+
+.login_background_liner{
+    background: linear-gradient(81deg, rgba(2, 0, 36, 1) 0%, rgb(0 0 0 / 44%) 52%);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.video_container {
+    position: relative;
+}
+
+.video_container video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .login_wrapper {
@@ -209,9 +253,10 @@ button {
 
 .login_wrapper h2 {
     font-size: 60px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Readex Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #f9e4e4;
 }
 
 .login_form {
@@ -226,20 +271,27 @@ button {
     width: 96%;
     padding: 6px;
     outline: none;
-
+    margin-top: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
 
 }
 
 .login_form p a {
     text-decoration: none;
-    color: gray;
+    color: rgb(255, 255, 255);
     font-size: 16px;
+    font-family: "Readex Pro", sans-serif;
 }
 
 .emailWARNING {
 
     height: 6vh;
+}
 
+.font_style {
+    font-family: "Readex Pro", sans-serif;
 }
 
 body {
@@ -253,11 +305,12 @@ body {
     color: red;
     font-size: 20px;
     text-align: center;
+    font-family: "Readex Pro", sans-serif;
 }
 
 .login-sucess {
 
-
+    font-family: "Readex Pro", sans-serif;
     color: green;
     font-size: 20px;
     text-align: center;
@@ -265,7 +318,7 @@ body {
 
 .logincheckbox {
     position: absolute;
-    bottom: 34%;
+    bottom: 32%;
     right: 7%;
     width: 13px !important;
 }
@@ -291,14 +344,15 @@ body {
     .login_form {
 
         width: 216%;
-        background-color: #fff;
+        background-color: transparent;
         border-radius: 6px;
         margin-top: 40px;
+        backdrop-filter: blur(2px);
     }
 
     .logincheckbox {
         position: absolute;
-        bottom: 34%;
+        bottom: 32%;
         right: 7%;
         width: 13px !important;
     }
@@ -312,9 +366,11 @@ body {
     .login_form {
 
         width: 100%;
-        background-color: #fff;
+        background-color: transparent;
+        border: 1px solid white;
         border-radius: 6px;
         margin-top: 40px;
+        backdrop-filter: blur(6px);
     }
 
     .login_wrapper {
@@ -497,94 +553,6 @@ footer p a:hover {
         font-size: 15px;
         margin-bottom: 0px;
 
-
-    }
-}
-
-.div_strip {
-    width: 20%;
-    background-color: white;
-    height: 5%;
-    position: absolute;
-    top: 84px;
-    animation: chaser 5s infinite;
-
-}
-
-@keyframes chaser {
-    from {
-        width: 0px;
-    }
-
-    to {
-        width: 250px;
-    }
-
-}
-
-@keyframes chaserreturn {
-    from {
-        width: 250px;
-    }
-
-    to {
-        width: 0px;
-    }
-}
-
-.div_strip2 {
-    width: 20%;
-    background-color: rgb(21, 121, 214);
-    height: 5%;
-    position: absolute;
-    top: 84px;
-    animation: chaserreturn 5s infinite;
-
-}
-
-
-/* media quary */
-
-
-@media only screen and (min-width:1281px) {
-    .div_strip {
-        width: 20%;
-        background-color: white;
-        height: 5%;
-        position: absolute;
-        top: 121px;
-        animation: chaser 5s infinite;
-
-    }
-
-    @keyframes chaser {
-        from {
-            width: 0px;
-        }
-
-        to {
-            width: 380px;
-        }
-
-    }
-
-    @keyframes chaserreturn {
-        from {
-            width: 380px;
-        }
-
-        to {
-            width: 0px;
-        }
-    }
-
-    .div_strip2 {
-        width: 20%;
-        background-color: rgb(21, 121, 214);
-        height: 5%;
-        position: absolute;
-        top: 121px;
-        animation: chaserreturn 5s infinite;
 
     }
 }

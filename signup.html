@@ -13,31 +13,35 @@
 </head>
 
 <body>
+    <div class="video_container">
+        <video src="./video/background-video.mp4"  autoplay loop muted></video>
+    </div>
+    <div class="background_liner"></div>
     <div class="container">
         
           
             <form action="" method="post">
                 <div class="success" id="result" ></div>
-                <div><h2>SignUp</h2></div>
+                <div><h2 class="signup_title">SignUp</h2></div>
                 <div >
-                    <label for="Firstname">Firstname </label>
-                    <input type="text" id="Firstname" class="capitalixe">
+                    <label for="Firstname" class="label_font">Firstname </label>
+                    <input  type="text" id="Firstname" class="capitalixe">
                     
                     <div id="firstWarn"></div>
                 </div>
                 <div>
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" class="capitalixe">
+                    <label for="lastname" class="label_font">Last Name</label>
+                    <input type="text" id="lastname" >
                     <div id="lastNameWarn"></div>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
+                    <label for="email" class="label_font">Email</label>
+                    <input type="text" id="email" >
                     <div id="email-warning"></div>
                 </div>
                 <div style="position: relative;">
-                    <label for="password">Password</label>
-                    <input type="password" id="pass" style="margin-bottom: 5px;">
+                    <label for="password" class="label_font">Password</label>
+                    <input type="password" id="pass" style="margin-bottom: 10px;" >
                     <div id="password" class="password_con"></div>
                     
                     <input class="checkbox" type="checkbox" onclick="mycheckBox()">
