@@ -234,7 +234,7 @@ button {
 }
 
 .video_container {
-    position: relative;
+    position: fixed;
 }
 
 .video_container video {
